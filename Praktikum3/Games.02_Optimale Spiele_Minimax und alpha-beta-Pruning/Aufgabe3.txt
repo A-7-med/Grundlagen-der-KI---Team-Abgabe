@@ -1,0 +1,19 @@
+Aufgabe 3: Vergleich der jeweils berechneten Knoten
+
+Szenario 1: Startzustand (leeres Brett, geordnete Nachfolger)
+
+-Minimax: 549945 Knoten
+-Alpha Beta: 7274 Knoten
+-Einsparung: ca. 98.68 %
+
+Szenario 2: Beispielposition
+
+-Minimax: 205 Knoten
+-Alpha Beta: 148 Knoten
+-Einsparung: ca. 27.80 %
+
+Beobachtungen
+
+Beide Verfahren liefern denselben besten Zug und dieselbe Bewertung.
+Alpha Beta reduziert die Zahl der besuchten Knoten deutlich. Der Effekt hängt stark von der Reihenfolge der Nachfolger ab.
+Der Effekt ist im Startzustand am größten, weil die Verzweigungsbreite dort maximal ist. In späteren Stellungen nimmt die Einsparung ab, bleibt aber sichtbar.
