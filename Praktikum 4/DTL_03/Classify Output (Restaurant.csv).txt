@@ -1,0 +1,77 @@
+Classify Output (Restaurant.csv)
+
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     restaurant
+Instances:    12
+Attributes:   11
+              Alt
+              Bar
+              Fri
+              Sat
+              Pat
+              Price
+              Rain
+              Res
+              Type
+              Est
+              WillWait
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Pat =  Some:    Yes (3.0)
+Pat =  Full:   Yes (4.0/2.0)
+Pat =   Some:    Yes (1.0)
+Pat =   Full:     No  (2.0)
+Pat =   None:    No (2.0/1.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	6
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           9               75      %
+Incorrectly Classified Instances         3               25      %
+Kappa statistic                          0.6842
+Mean absolute error                      0.0833
+Root mean squared error                  0.2041
+Relative absolute error                 35.3723 %
+Root relative squared error             59.9123 %
+Total Number of Instances               12     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000        Yes
+                 0,000    0,000    ?          0,000    ?          ?        0,864     0,250       No
+                 1,000    0,200    0,500      1,000    0,667      0,632    0,900     0,500       Yes
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000         No 
+                 1,000    0,091    0,500      1,000    0,667      0,674    0,955     0,500        No
+                 0,000    0,000    ?          0,000    ?          ?        0,864     0,250       No 
+                 0,000    0,000    ?          0,000    ?          ?        0,955     0,500        No 
+Weighted Avg.    0,750    0,041    ?          0,750    ?          ?        0,953     0,708     
+
+=== Confusion Matrix ===
+
+ a b c d e f g   <-- classified as
+ 4 0 0 0 0 0 0 | a =    Yes
+ 0 0 1 0 0 0 0 | b =   No
+ 0 0 2 0 0 0 0 | c =   Yes
+ 0 0 0 2 0 0 0 | d =     No 
+ 0 0 0 0 1 0 0 | e =    No
+ 0 0 1 0 0 0 0 | f =   No 
+ 0 0 0 0 1 0 0 | g =    No 
